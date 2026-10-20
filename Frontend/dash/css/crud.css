@@ -1,0 +1,157 @@
+/* ============================================
+   ESTILOS CRUD DEL PANEL
+   ============================================ */
+.card-form .card-header,
+.card-table .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-form .card-header {
+    background: var(--pf-gradient-soft);
+}
+
+.card-form .card-title i {
+    color: var(--pf-primary);
+}
+
+/* ---------- Tablas ---------- */
+.table {
+    --bs-table-color: var(--bs-body-color);
+    --bs-table-bg: transparent;
+    --bs-table-border-color: var(--bs-border-color);
+    margin: 0;
+}
+
+.table thead th {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bs-secondary-color);
+    border-bottom: 1px solid var(--bs-border-color);
+    white-space: nowrap;
+    padding: 0.85rem 1rem;
+    background: rgba(0, 240, 255, 0.02);
+}
+
+.table tbody td {
+    padding: 0.8rem 1rem;
+    vertical-align: middle;
+    border-color: var(--bs-border-color);
+}
+
+.table tbody tr {
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background: rgba(0, 240, 255, 0.05);
+    box-shadow: inset 3px 0 0 var(--pf-primary);
+}
+
+/* ---------- Avatares con iniciales ---------- */
+.pf-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #050510;
+    background: var(--pf-gradient);
+    box-shadow: 0 0 14px rgba(0, 240, 255, 0.25);
+    flex: 0 0 auto;
+}
+
+.pf-avatar.pf-avatar-accent {
+    background: linear-gradient(135deg, #b24bf3, #ff2d95);
+    box-shadow: 0 0 14px rgba(178, 75, 243, 0.3);
+}
+
+.pf-name {
+    font-weight: 600;
+}
+
+.pf-sub {
+    color: var(--bs-secondary-color);
+    font-size: 0.78rem;
+}
+
+/* ---------- Formularios ---------- */
+.form-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--bs-secondary-color);
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.01em;
+}
+
+.form-select option {
+    background: #0a0a1e;
+    color: #e0e0f0;
+}
+
+[data-bs-theme='light'] .form-select option {
+    background: #ffffff;
+    color: #1a1a3a;
+}
+
+.required {
+    color: #ff5c9d;
+}
+
+/* ---------- Botones de acción ---------- */
+.btn-icon {
+    --bs-btn-padding-y: 0.3rem;
+    --bs-btn-padding-x: 0.55rem;
+    border-radius: 9px;
+    line-height: 1;
+}
+
+.badge-estado {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 0.38em 0.7em;
+}
+
+/* ---------- Métricas mini ---------- */
+.stat-mini {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    background: var(--pf-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---------- Estado vacío ---------- */
+.empty-state {
+    text-align: center;
+    color: var(--bs-secondary-color);
+    padding: 2.75rem 1rem;
+}
+
+.empty-state i {
+    font-size: 2.75rem;
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--pf-primary);
+}
+
+/* ---------- Alertas ---------- */
+.alert-success {
+    border-color: rgba(0, 240, 192, 0.4);
+    box-shadow: 0 0 20px rgba(0, 240, 192, 0.15);
+}
+
+.alert-danger {
+    border-color: rgba(255, 45, 149, 0.4);
+    box-shadow: 0 0 20px rgba(255, 45, 149, 0.15);
+}

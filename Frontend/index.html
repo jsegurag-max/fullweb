@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Jeremy Alexander Segura Guevara - Desarrollador Web">
+    <title>Jeremy Alexander Segura Guevara | Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-badge"><span class="loader-initials">JS</span></div>
+            <div class="loader-bar"><div class="loader-progress" id="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">
+                <span class="logo-badge">
+                    <span class="logo-initials">JS</span>
+                </span>
+                <span class="logo-text">
+                    <span class="logo-name">Jeremy Segura</span>
+                    <span class="logo-sub">Desarrollador Web</span>
+                </span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-right">
+                <div class="auth-nav" id="auth-nav">
+                    <a class="btn btn-primary btn-login" id="login-open" href="login.php">
+                        <i class="fas fa-user"></i> <span id="login-open-text">Login</span>
+                    </a>
+                    <div class="user-chip hidden" id="user-chip">
+                        <span class="user-avatar" id="user-avatar"><i class="fas fa-user"></i></span>
+                        <span class="user-name" id="user-name">Usuario</span>
+                        <button class="user-logout" id="logout-btn" aria-label="Cerrar sesión" title="Cerrar sesión">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="inicio">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-main">
+                <img src="Foto.jpeg" alt="Foto de Jeremy Alexander Segura Guevara" class="hero-photo">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hola, soy</p>
+                    <h1 class="hero-name">Jeremy Alexander<br>Segura Guevara</h1>
+                </div>
+            </div>
+            <div class="hero-typing">
+                <span class="typing-text" id="typing"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-description">Creo experiencias digitales modernas y funcionales que destacan.</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-outline">Contactar</a>
+                <a href="#" class="btn btn-outline" id="cv-download">
+                    <i class="fas fa-download"></i> Descargar CV
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/jsegurag-max" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jeremy-segura-219086319/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:jsegurag@autonoma.edu.pe" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <a href="#sobre-mi" class="scroll-down" aria-label="Scroll">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </header>
+
+    <section class="section" id="sobre-mi">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <div class="about-avatar">
+                            <img src="Foto.jpeg" alt="Foto de Jeremy Alexander Segura Guevara" class="about-photo">
+                        </div>
+                        <div class="about-decoration"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Desarrollador Web apasionado por crear soluciones innovadoras</h3>
+                    <p>Soy Jeremy Alexander Segura Guevara, un desarrollador web comprometido con la creación de aplicaciones modernas, rápidas y escalables. Me encanta transformar ideas en realidad a través del código.</p>
+                    <p>Actualmente me enfoco en tecnologías front-end y back-end, buscando siempre aprender nuevas herramientas y mejores prácticas de desarrollo.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="5">0</span>+
+                            <span class="stat-label">Proyectos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="3">0</span>+
+                            <span class="stat-label">Tecnologías</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="1">0</span>+
+                            <span class="stat-label">Años Exp.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark" id="habilidades">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <span>HTML5</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <span>CSS3</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                            <span>JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <span>React</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span>Node.js</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span>Python</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span>MySQL</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                            <span>Firebase</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="65"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Herramientas</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <span>Git</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                            <span>Figma</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                            <span>Bootstrap</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                            <span>VS Code</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="proyectos">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="diseño">Diseño</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/jsegurag-max" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce</h3>
+                        <p>Tienda en linea con carrito de compras, pasarela de pagos y panel de administracion.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-tasks"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/jsegurag-max" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Manager</h3>
+                        <p>Aplicacion de gestion de tareas con autenticacion y sincronizacion en la nube.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-cloud-sun"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/jsegurag-max" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>Aplicacion del clima con geolocalizacion, pronostico a 7 dias y graficos interactivos.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>API</span><span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="diseño">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-palette"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/jsegurag-max" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard UI</h3>
+                        <p>Diseno de panel administrativo con graficas, estadisticas y tema oscuro/claro.</p>
+                        <div class="project-tags">
+                            <span>Figma</span><span>HTML5</span><span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-comments"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/jsegurag-max" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Chat App</h3>
+                        <p>Aplicacion de mensajeria en tiempo real con WebSockets y notificaciones push.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Socket.io</span><span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-blog"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/jsegurag-max" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Blog Personal</h3>
+                        <p>Blog con sistema de comentarios, busqueda de articulos y panel de administracion CMS.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>Flask</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Trabajemos juntos</h3>
+                    <p>Estoy disponible para oportunidades laborales, proyectos freelance o simplemente charlar sobre tecnología.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <span>El Salvador, C.A.</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:jsegurag@autonoma.edu.pe">jsegurag@autonoma.edu.pe</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <a href="https://wa.me/51902019951" target="_blank" rel="noopener">+51 902 019 951</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/jsegurag-max" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jeremy-segura-219086319/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/51902019951" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Nombre completo</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Correo electrónico</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder=" " required>
+                        <label for="subject">Asunto</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Mensaje</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div class="form-status" id="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 <strong>Jeremy Alexander Segura Guevara</strong>. Todos los derechos reservados.</p>
+                <p class="footer-tagline">Desarrollado con <i class="fas fa-heart"></i> y mucho cafe</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
